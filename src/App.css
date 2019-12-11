@@ -1,8 +1,14 @@
 * {
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
 }
 
-.content {
-  display: flex;
+html {
+  font: calc(100% * 0.625) / 1.15 HelveticaNeue, Helvetica, sans-serif;
+}
+
+body {
+  font-size: 1.8rem;
+  line-height: 1.875;
+  color: #252525;
+  margin: 0;
 }

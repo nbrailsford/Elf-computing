@@ -53,3 +53,15 @@ while keeping them available to the keyboard */
 .feature__option:not(:checked) + .feature__label {
   cursor: pointer;
 }
+
+main {
+  width: 95%;
+  max-width: 120rem;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.main__form {
+  flex: 4;
+}

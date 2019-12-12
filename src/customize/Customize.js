@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./customize.css";
+import Options from "../options/Options";
 import slugify from "slugify";
 
 const USCurrencyFormat = new Intl.NumberFormat("en-US", {
@@ -30,14 +31,7 @@ class Customize extends Component {
         );
       });
 
-      return (
-        <fieldset className="feature" key={featureHash}>
-          <legend className="feature__name">
-            <h3>{feature}</h3>
-          </legend>
-          {options}
-        </fieldset>
-      );
+      return <Options featureH={featureHash} feat={feature} option={options} />;
     });
 
     return (
@@ -50,3 +44,12 @@ class Customize extends Component {
 }
 
 export default Customize;
+
+{
+  /* <fieldset className="feature" key={featureHash}>
+  <legend className="feature__name">
+    <h3>{feature}</h3>
+  </legend>
+  {options}
+</fieldset>; */
+}
